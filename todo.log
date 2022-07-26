@@ -1,0 +1,76 @@
+2022-07-11 15:29:23,611 INFO  [restartedMain] com.nest.todo.LoginPageApplication : Starting LoginPageApplication using Java 17.0.1 on NTP-LAP-298 with PID 52012 (C:\Users\admin\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\LoginPage\target\classes started by divya in C:\Users\admin\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\LoginPage)
+2022-07-11 15:29:23,611 INFO  [restartedMain] com.nest.todo.LoginPageApplication : The following profiles are active: local
+2022-07-11 15:29:24,345 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-11 15:29:24,351 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-07-11 15:29:24,468 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=ed0beda4-ce14-3c34-b05b-52326465fd8f
+2022-07-11 15:29:24,589 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8092 (http)
+2022-07-11 15:29:24,589 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-07-11 15:29:24,590 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-07-11 15:29:24,640 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/todo] : Initializing Spring embedded WebApplicationContext
+2022-07-11 15:29:24,640 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1025 ms
+2022-07-11 15:29:24,713 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-11 15:29:24,719 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
+2022-07-11 15:29:25,028 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed.
+2022-07-11 15:29:25,029 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-07-11 15:29:25,222 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-11 15:29:25,223 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 15:29:25,243 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-07-11 15:29:25,306 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-11 15:29:25,389 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-11 15:29:26,461 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-07-11 15:29:26,695 INFO  [restartedMain] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-11 15:29:26,718 WARN  [restartedMain] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-07-11 15:29:26,742 INFO  [restartedMain] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2022-07-11 15:29:26,745 INFO  [restartedMain] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-11 15:29:26,745 INFO  [restartedMain] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2022-07-11 15:29:26,745 INFO  [restartedMain] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1657533566745 with initial instances count: 0
+2022-07-11 15:29:26,746 INFO  [restartedMain] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application TODO-APPLICATION with eureka with status UP
+2022-07-11 15:29:26,760 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8092 (http) with context path '/todo'
+2022-07-11 15:29:26,761 INFO  [restartedMain] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8092
+2022-07-11 15:29:26,879 INFO  [restartedMain] com.nest.todo.LoginPageApplication : Started LoginPageApplication in 3.45 seconds (JVM running for 359.763)
+2022-07-11 15:29:26,886 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name todo.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-07-11 15:29:56,043 INFO  [http-nio-8092-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/todo] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 15:29:56,043 INFO  [http-nio-8092-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2022-07-11 15:29:56,052 INFO  [http-nio-8092-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2022-07-11 15:29:56,992 INFO  [http-nio-8092-exec-7] org.springdoc.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 184 ms
+2022-07-11 15:30:06,913 INFO  [Thread-11] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application TODO-APPLICATION with eureka with status DOWN
+2022-07-11 15:30:06,964 INFO  [Thread-11] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-11 15:30:06,965 INFO  [Thread-11] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 15:30:06,967 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown initiated...
+2022-07-11 15:30:06,970 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown completed.
+2022-07-11 15:30:06,971 INFO  [Thread-11] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-11 15:30:07,006 INFO  [Thread-11] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient

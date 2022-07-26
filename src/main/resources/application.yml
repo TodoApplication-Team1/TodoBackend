@@ -1,0 +1,9 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /todo
+spring:
+  application:
+    name: todo-application
+  profiles:
+    active: local
