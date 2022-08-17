@@ -1,31 +1,34 @@
 package com.nest.todo.entities;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.MapsId;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import javax.persistence.OneToMany;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
-@Builder
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Category {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int CategoryId;
-	
+
 	private String categoryName;
 	
-	private int userId;
+	
+	private int user_fk;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "category_id")
+	private List<Task> tasks;
+
 }

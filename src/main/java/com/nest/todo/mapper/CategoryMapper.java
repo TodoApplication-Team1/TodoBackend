@@ -7,10 +7,9 @@ import com.nest.todo.controller.dto.CategoryDto;
 
 import com.nest.todo.entities.Category;
 
-
 @Mapper
 public interface CategoryMapper {
-	CategoryDto convertToCategoryDto( Category category);
 	
-	Category updateCategory( CategoryDto  categoryDto, @MappingTarget  Category category);
+
+	Category updateCategory(CategoryDto categoryDto, @MappingTarget Category category);
 }

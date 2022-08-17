@@ -5,9 +5,9 @@ server:
 
 spring:
   application:
-    name: LoginPage
+    name: TodoApplication
   datasource:
-    url: jdbc:postgresql://localhost:5432/TodoApplication?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://localhost:5432/Todo?createDatabaseIfNotExist=true
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
